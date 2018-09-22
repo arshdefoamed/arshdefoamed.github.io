@@ -1,6 +1,25 @@
 <html>
 	<head>
 		<title>Week 2-CS491</title>
+		<style>
+		* {
+		    box-sizing: border-box;
+		}
+
+		.column {
+		    float: left;
+		    width: 35%;
+		    padding: 5px;
+		    margin-left: 10%;
+		}
+
+		
+		.row::after {
+		    content: "";
+		    clear: both;
+		    display: table;
+		}
+</style>
 	</head>
 	<body style ="background-color:white;color:black;margin-left: 5%;margin-right: 5%;">
 		<h1 style="text-align: center;">CS 491 - Virtual and Augmented Reality - Week 2</h1>
@@ -11,12 +30,23 @@
 		<p>
 			Since we have been looking at the sky since ages and we are not going to stop anytime soon, it's logical that some people with passion in this field will try to help others understand what we know. And in comes a free android app called <a href="https://play.google.com/store/apps/details?id=com.t11.skyviewfree&hl=en_US">Sky View free </a>. This app just needs to know where you are on planet earth (Sorry martians, you ahve to wait for now :P) and only thing you need to do is point your device towards the sky. The app will give you all the information that you need about the celestial body you are looking at. Here are a couple of examples: 			
 		</p>
-		<div >
-			<img src="skyView1.png" style="margin-left: 20%;height: 500px;float:left;">
+		<!-- <div >
+			<img src="skyView1.png" style="margin-left: 20%;height: 500px;float">
 			<img src="skyView2.png" style="margin-left: 5%;height: 500px;float:left;">
+			<div></div>
+		</div> -->
+
+		<div class="row">
+		  <div class="column">
+		    <img src="skyView1.png" style="height: 500px;">
+		  </div>
+		  <div class="column" style="margin-left: 0px">
+		    <img src="skyView1.png" style="height: 500px;">
+		  </div>
+		  
 		</div>
 		<p>
-			To be honest, pointing your phone towards the sky is very tiresome(Yes, I am lazy!!). I want a simple solution to this. Afterall, this is nothing but an application of Augmented reality. So, for me the ideal scenario for it would be to integrate this application in eye glasses. Now, stay with me. This kind of application can open gates to a lot many things. Firstly, you will feel like robocop. You get to have information about everything in your view. There will be nothing that you dont have information about. Saw a book, get its summary and review right in front of you with no one knowing about it. But, let's keep the discussion to the primal age of looking up at the sky. Now, you will know the answer to few of these questions:
+			To be honest, pointing your phone towards the sky is very tiresome(Yes, I am lazy!!). I want a simple solution to this. Afterall, this is nothing but an application of Augmented reality. So, for me the ideal scenario for it would be to integrate this application in eye glasses. Now, stay with me. This kind of application can open gates to a lot many things. Firstly, you will feel like robocop. You get to have information about everything in your view. There will be nothing that you dont have information about. Saw a book, get its summary and review right in front of you with no one knowing about it. But, let's keep the discussion to the primal age of looking up at the sky. Gone will be the days of the aeroplane flyers because augmented reality is there for you. More importantly, you will know the answer to few of these questions:
 			<ul>
 				<li>What bird is flying on the sky? </li>
 				<li>Which aircraft is going over your head?</li>
@@ -27,10 +57,13 @@
 		<p>
 			Now, this will require data from various sources. Creating object detection application is really hard and is very data expensive. The possible data sources can be as follows:
 			<ol>
-				<li><b>Space agencies:</b> Data from space agencies related to celestial bodies and satellites.</li>
-				<li><b>Materological department:</b> Data from meteorological department about research on weather patterns will help give accurate weather information.</li>
+				<li><b>Space agencies:</b> Data from space agencies related to celestial bodies and satellites. Also, if someone is interested, you get to know the detailed information about each and everything. Its high time we start appreciating the efforts done by our space agencies.</li>
+				<li><b>Materological department:</b> Data from meteorological department about research on weather patterns will help give accurate weather information. This will again help us </li>
 				<li><b>Ornithology research:</b> Data from ornithology department will help detect different type of birds and also let them know if any bird which is deemed endangered is in which region. Moreover, this application will help better understand migratory bird patterns</li>
+				<li><b>Aviation department: </b>Flight routes which is generally a public information, will let people know which flight is going where. Also, if one of your loves ones is in that flight. You get to wave to them, I know its childish but it feels good to be a child.</li>
+
 			</ol>
 		</p>
+		<p>To conclude, this application is wonderful.Even though the use of this application is limited as we spend most of our time indoors. But, if the underlying principle of this application is applied in wearable augmented reality applications, it will be really useful. The applications are unlimited, only thing that limits us is our imagination.</p>
 	</body>
 </html>
