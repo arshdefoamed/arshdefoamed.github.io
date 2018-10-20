@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<title>Week 7-CS491</title>
+		<style>
+		* {
+		    box-sizing: border-box;
+		}
+
+		.column {
+		    float: left;
+		    width: 35%;
+		    padding: 5px;
+		    margin-left: 10%;
+		}
+
+		
+		.row::after {
+		    content: "";
+		    clear: both;
+		    display: table;
+		}
+		.check {
+		    display: inline-block;
+		    margin-left: auto;
+		    margin-right: auto;
+		     
+		}
+		p{
+			text-align: justify;
+		}
+</style>
+	</head>
+	<body style ="background-color:white;color:black;margin-left: 5%;margin-right: 5%;">
+		<h1 style="text-align: center;">CS 491 - Virtual and Augmented Reality - Week 8</h1>
+		<h2 style="text-align: center;">Tipping the scales</h2>
+		<h3>Introduction</h3>
+		<p>
+			If you are one of the marvel movie fans, you would want to get powers of one of the marvel movie characters. Maybe you would want to have strength of Hulk, maybe you want the thunderous power of Thor or you want to have Iron Man/ Ant Man's suit. Well, you are in luck as virtual reality can make you experience how you would perceive the world from the eyes of ant man. For the rest, you will need to wait for the science to work its magic. So, lets discuss viewing the world from the view point of a small object. Imagine you suddenly shrink to 1/10th of your size. How would the world look like to you? For sure, everything would be super big. For instance, I am working on the virtual reality project and here are the before or after screenshots from the point of view of a person who is 1.5m tall.
+		</p>
+		<div style="text-align: center;">
+			<img src="before.PNG" style="width:350px;height:200px;" alt="before"class="check">&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="after.PNG" style="width:350px;height:200px;" alt="after"class="check">			
+		</div>
+		<p>
+			 As you can see, the subject in the first picture looks like a normal person but in the other picture the subject looks like a giant. So, the normal rules of our perception go out of the window and the world is suddenly a different place. Also, I found out about some of the errors that I made during the model placement as shown in the screenshots below:			
+		</p>
+		<div style="text-align: center;">
+			<img src="before2.PNG" style="width:350px;height:200px;" alt="before"class="check">&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="after2.PNG" style="width:350px;height:200px;" alt="after"class="check">			
+		</div>		
+		<p>
+			In the first screenshot, all the items are really small and you can not really see how they are placed on the ground. But when I blew up the scales, I found that I placed the mushroom incorrectly. In the world of programming it is said, that the quality of your work is tested at the boundary scenarios where everything is at limit. Hence, as part of coding best practices it is always said that one should test his/her code with boundary scenario test cases. From technical perspective, I noticed a couple of issues in my program:
+			<ol>
+				<li>The placement of the models</li>
+				<li>Some textures didnt look good from close</li>
+				<li>The particle effects that I used didn't work well at all</li>
+				<li>The joints of the few models that I created were not aligned properly.</li>
+				<li>The speed of the navigation controls for the simulator was not with par to the increased scale.</li>				
+			</ol>
+			This experience opened my eyes to different world and also made me a better programmer. I was able to make my work better and now I have some really good ideas about my future projects.
+		</p>
+		<h3>Adapting to the new scale</h3>
+		<p>
+			As I said earlier, in the new scale the world is completely different and there are numerous challenges with respect to navigation and object manipulation. From the programmers point of view where scale requirements can change frequently based on the client's requirements my code/ work should be adaptive enough to not to break down with the change in the requirements. My analysis is based on the constraints and requirements with respect to the current project I am working on. 
+			Firstly, my navigation speed should be proportional to the scale I am working with. Secondly, the spacing of the objecs should also be proportional to the scale. There is a probability that if I increase the size of the models they will collide with each other. Also,  I would need to provide some abilities like flying to the user so that he/she can see what's there on the top of a very large table. There will also be an issue related to handling obstacles that you thought would come up. For example, lets say there is a cone model that you made for the purpose for the decoration. But now, the cone is a mountain and it will be a different challenge for navigating across that cone. So, overall this is a tough task and it would need years of experience to come up with methodlogies to avoid these issues. 
+		</p>
+		<h3>Applications</h3>
+		<p>
+			Seeing things in 10x scale perspective is an uneasy task as all we know about the world does not apply to it. But, this new found perspective can have a different kind of applications in various fields. Few of them are as follows:
+		</p>
+		<h4>Entertainment</h4>
+		<p>
+			One of the highly values aspect of story telling is giving the viewer an experience from a completely different perspective. So, seeing things from the perspective of a very small person is something unique and is sometimes a very big challenge for movie directors. This is the reason movies like Antman and Honey, I shrunk the kids were huge commercial success. For instance, in the bath tub scene of Ant Man, the small splash of water seemed like a flood to the protagonist.This is something that requires great deal of imagination and is very difficult to execute in the technical sense as well.
+		</p>
+		<h4>Particle interaction research</h4>
+		<p>
+			Since old ages, we have put things under the microscope and tried to see how they look like. However, that was limited to stationary objects as seeing two things interact under a microscope was a cumbersome task. Now, based on our past research and experiments, we have the mathematical models explaining the interaction between different small particles. Using virtual reality we can blow up the scale and see those interactions in action and based on the observations made on the large scale we can revise our models or conduct the further research.
+		</p>
+		<h4>Analysis of machine components</h4>
+		<p>
+			Using the 3d design models of the machine and their components, we can predict which component has higher probability to fail because of wear/tear or stress. Also, it would be easier for us to visualise how different components are working in tandem to make up a complex machine. This will help students to learn the basic concepts in a much better way.
+		</p>
+	</body>
+</html>
