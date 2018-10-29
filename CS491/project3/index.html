@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<title>Project 3 - proposal</title>
+		<style>
+		* {
+		    box-sizing: border-box;
+		}
+
+		.column {
+		    float: left;
+		    width: 35%;
+		    padding: 5px;
+		    margin-left: 10%;
+		}
+
+		
+		.row::after {
+		    content: "";
+		    clear: both;
+		    display: table;
+		}
+		p{
+			text-align: justify;
+		}
+</style>
+	</head>
+	<body style ="background-color:white;color:black;margin-left: 5%;margin-right: 5%;">
+		<h1 style="text-align: center;">CS 491 - Virtual and Augmented Reality - Project 3 proposal</h1>
+		<h2 style="text-align: center;">Battle Royale AR</h2>
+		<h3>Description</h3>
+		<p>
+			Battle Royale AR is an Augmented Reality gaming application. So, this is pretty much clear from the title, let us dive into the exact specifics of the application. The game is inspired from the legacy game - ‘Battle City’ which was developed by Namco with the first release in 1985. ‘Battle City’game incorporates a headquarter which is supposed to be guarded by a player or a group of players from the enemy tanks which are AI tanks. These tanks are spawned randomly and shoot the opposite tanks when they come across one of those. The result of shooting depends upon the level of the tank which takes the Hit. 
+ 		</p>
+ 		<p>
+ 			Battle Royale AR is built on the same lines except that there is no group of players playing together. Instead, they play against each other using local multi-peer networking established by one of the hosts in the group. Each player gets 3 lives to play and unlike ‘Battle City’ there are no headquarters to defend. The game will be even more clear in the section of this article which describes the differences of this game with respect to ‘Battle City’.
+ 		</p>
+ 		<p>
+ 			The key difference which must be highlighted in this section is that this game is supposed to be played outside on a flat surface where there can be a plenty of open space to move around the Virtual Arena. This is one of the reasons for incorporating AR in this game i.e this will force the user for some physical efforts, unlike a console based version which can just be played by sitting on the couch.Another distinguishing feature of the game is that the players can see everything in 3d which adds another layer of complexity and realism to the game-play. Another similarity which should be brought into the picture at this point is the power-up feature. Like ‘Battle City’ there will be similar power-ups for tanks. For example, a power-up which makes the tank immune to all bullets for a short period of time. Another example can be a power-up which increases the rank of the tank.
+ 		</p>
+ 		<b>Closing Notes:</b>
+ 		<p>
+ 			‘Battle Royale AR’ will make a virtual arena on a flat surface. The user will see this arena on the phone screen and will be able to move around the arena and play virtually. The end product will look somewhat similar to the demonstration of SwiftShot by Apple. Please refer to the image below: <br><br>
+ 			<img src="image.png" style="height:400px;margin:auto">
+ 		</p>
+
+		<b>Differences between “Battle City” and “Battle Royale AR”</b>
+		<ul>
+			<li>There is no headquarters in Battle Royale to defend</li>
+			<li>There is no key power-up which turns headquarter brick-walls to stone-walls. Brick-walls can be destroyed by the tank bullets while stone-walls are immune to the tank bullets but this applies to only to the tanks with ranks lower than the highest rank. The highest rank tank can destroy the stone-wall. The tanks will gain the rank with the help of 			
+			</li>
+			<li>Power-ups spawn randomly as compared to killing one of the special enemy tasks</li>
+			<li>There are no grass environments for camouflage</li>
+			<li>For now, we are keeping only one arena design as compared to multiple design options in Battle City</li>
+		</ul>
+		<h3>Team:</h3>
+		<p> Arshdeep Singh Takkar and Vinay Manchundiya. We share equal roles of design and development of the game</p>
+		<h3>Development environment: </h3>
+		<ul>
+			<li><b>Platform:</b> iOS</li>
+			<li><b>IDE:</b> XCode/Unity(If required)</li>
+			<li><b>Programming Language:</b> Swift</li>
+			<li><b>Framework/Library</b> ARKit by Apple</li>
+		</ul>
+	</body>
+</html>
