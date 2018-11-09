@@ -1,0 +1,110 @@
+<html>
+	<head>
+		<title>Week 11-CS491</title>
+		<style>
+		* {
+		    box-sizing: border-box;
+		}
+
+		.column {
+		    float: left;
+		    width: 35%;
+		    padding: 5px;
+		    margin-left: 10%;
+		}
+
+		
+		.row::after {
+		    content: "";
+		    clear: both;
+		    display: table;
+		}
+		.check {
+		    display: inline-block;
+		    margin-left: auto;
+		    margin-right: auto;
+		     
+		}
+		p{
+			text-align: justify;
+		}
+		.nestedP{
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+</style>
+	</head>
+	<body style ="background-color:white;color:black;margin-left: 5%;margin-right: 5%;">
+		<h1 style="text-align: center;">CS 491 - Virtual and Augmented Reality - Week 11</h1>
+		<h2 style="text-align: center;">Holoportation - a review</h2>
+		<h3>Introduction</h3>
+		<p>
+			Holoportation is the techology created by Microsoft to project the live hologram of a user into a different location usign holo-lens. The technology uses a set of 3D capture cameras to create the hologprahic model of the subject and then sending that information to create the augmented reality model for holo-lens. 
+		</p> 
+		<div style="text-align: center">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/7d59O6cfaM0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<h3>Technological Innovations </h3>
+		<p>
+			The holoportation technology is an exciting new entrant to the market. The development of the technology must have required many engineering innovations and development of new techniques. 
+			<h4 class="nestedP">3D recording</h4>
+			<p class="nestedP">
+				Microsoft have their proprietary kinect cameras which is widely accepted by the market. But for creating 3d holograms, this wouldn't be enough. As said by their project lead Shahram Izadi: "Kinect is designed to track the human skeleton. We're really about capturing high quality detail of the human body, to reconstruct every feature. That has required a rethinking of the 3D sensor from the ground up."[<a href="https://www.wired.com/2016/04/microsoft-holoportation-star-wars-hologram/">Source</a>] <br>
+				Then there is the challenging task of combining the outputs of multiple cameras. As we can see in the demo video, they have done a fine job and the results are amazing when we talk about 3d model reconstruction.
+			</p>
+			<h4 class="nestedP"> Processing information</h4>
+			<p class="nestedP">
+				Agreed, innovations in MMORPG have resulted in a lot of innovations and advancements in sharing same environments. However, sharing 3D-holographic data from the multiple cameras across different users is a multiple ball game altogether. Also, in this scenario the latency is of high importance. So, all the data has to be processed really fast.
+			</p>
+			<h4 class="nestedP">Storage and compression</h4>
+			<p class="nestedP">
+				As shown in the video, the interactions can be recorded and played again. The data to be saved is in 3 dimensions and should be in high definition. So, the hardware requirements for saving the data is going to be very high. To tackle this, Microsoft must have had to develop some really advanced compression algorithms. 
+			</p>
+			<h4 class="nestedP">Environment Synchronisation</h4>
+			<p class="nestedP">
+				Fourht issue that development team had to tackle would have been syncing two different spaces together. If two rooms are equal in dimensions, then mapping two different models would have been easier. But from product's point of view having a fixed dimensions of user space would be a very big turn off for the consumer. I am not sure if they have done something about it or not as I was not able to find any information about it. But, if they are able to scale different environments and make sure that people can interact effectively, it would be a great innovation. 
+			</p>
+			<h4 class="nestedP">Tracking</h4>
+			<p class="nestedP">
+				One more thing that I noticed in the video is that very few objects from the rooms were being shared in the holo-portation session. So, to segment those specific objects the cameras would be needed to trained to do so. But, the fact that user can select the objects to be tracked is again a very tough task. It will be clear about the capabilities of the product when it is open to purchase in the market and people actually start using it.
+			</p>
+		</p>
+		<h3>Applications </h3>
+		<p>
+			Holo-portation is another name for virtual teleportation. This has been one of the biggest dreams to achieve for anyone who has ever been exposed to science fiction. So, a lot many use cases have been explored by various author's, bloggers and directors. Few of them are : 
+			<h4 class="nestedP">Virtual Meetings and collaborations</h4>
+			<p class="nestedP">
+				The evolution of corporate collaboration has been an amazing case study. First we wanted to bring people close. So, firstly there were tele conferences. Then as technology advanced, we added video calls to it. Then, we added collaborative documents to it as well. In the process, we lost the human touch to it. And we are trying in many different ways to bring it back. The underlying reason for the current state of meetings is to avoid the loss of time and money on making people travel from different locations to  one single place to conduct a meeting. This has been showcased brilliantly in the movie "Kingsman". Please refer to the youtube video below for the gist.
+			</p>
+			<div style="text-align: center">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/S21Opv7zVWU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<p class="nestedP">
+				This technology would bring back to the good old spirit of working and collaborating with fellow humans. Also, the burden of creating collaborative designs and media will decrease. 
+			</p>
+			<h4 class="nestedP">Live events and media</h4>
+			<p class="nestedP">
+				Live events and media could be another way through which this product can be sold. Let's say you want to watch a live sport event. TV does a good job, but it is still not immersive enough. Now think about watching that event with your friend in 3d in your room. That would be an experience few sports fan would kill for to have. This can be extended to music concerts, presidential annoucements, movies and the examples can be lot many. Following is the example of an app that one of the iOS app devleopers have tried to create:
+			</p>
+			<div style="text-align: center">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/xO2a7QTTAk4?start=24" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<h4 class="nestedP">Collaborative sports</h4>
+			<p class="nestedP">
+				Now sicne you can move around the place along with other people, you have a very good opportunity to collaborate with other people. So any game where requires multiple people interacting can be played. The example could be Tennis where two people are playing against each other or games like escape room where people have to collaborate with each other to solve puzzles
+			</p>
+			<h4 class="nestedP">Connecting with family/friends</h4>
+			<p class="nestedP">
+				Last but not least this is one of the most enticing features of this technology. Being a foreign student there is never a day when I don't miss my family back home. Yes, I talk to them on video call everyday and to me its not enough. But given a chance where I can see them right next to me would be a very great thing for me and I would never lose any kind of chance for this. And this is also very evident from the video where the project lead talks to his daughter and when she asks him to come back to home soon his voice quivers. This is one of the aspects of the technology which is actuall bringingpeople together and strengthens the bond between people 
+			</p>
+		</p>
+
+
+
+		<!-- <div style="text-align: center;">
+			<img src="before.png" style="width:350px;height:200px;" alt="before"class="check">&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="after.png" style="width:350px;height:200px;" alt="after"class="check">			
+		</div> -->
+		
+	</body>
+</html>
