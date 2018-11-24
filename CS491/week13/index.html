@@ -41,35 +41,56 @@
 		<h2 style="text-align: center;">Student's choice critique - Project Northstar</h2>
 		<h3>Introduction</h3>
 		<p class="nestedP">
-			 
+			 Hello reader!!! This week again is the week for student choice presentation critique. This time I have chosen the topic of <a href="http://blog.leapmotion.com/northstar/">Project Northstar</a> by <a href="https://www.leapmotion.com">Leap Motion</a>. You can read the student article <a href="https://ram15144.github.io/content/ar-vr/project-north-star-article.html">here</a>. To give you some background, Leap Motion as they claim is the creator of the most advanced hand tracking technology. I do have some background with this technology. While I was an undergraduate student, they were new entrants into the market and I got a chance to see it in action. At that time this was a very exciting technology, but I didn't see its much application as it required a proper computer to work. However, with improvement in technology and shrinking of the size of computers, the scope of its applications improved. Many developers created some cool applications with the device. Then on 9 April, 2018 the company announced the project North Star and one week later they <a href="http://blog.leapmotion.com/north-star-open-source/"> <b>open sourced</b> </a>  it. So, basically it is an augmented reality device which uses its hand tracking technology to create immersive content. Before I delve into the intricacies and critique of its features, following is what the device looks like.
 		</p> 
 
 		<div style="text-align: center;">
-			<img src="" style="width:350px;height:200px;" alt="before"class="check">&nbsp;&nbsp;&nbsp;&nbsp;		
+			<iframe src="https://giphy.com/embed/1zkr6P6yO5qtfPlzdK" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p style="text-align: center;"><a href="https://giphy.com/gifs/ar-augmented-reality-leap-motion-1zkr6P6yO5qtfPlzdK">via GIPHY</a></p>	
 		</div>
+		<h3>Features</h3>
 		<p class="nestedP">
-			 
+			 Now, lets see what we got in our hands. As you can notice in the GIF above, the whole setup includes only two items:
+			 <ul>
+			 	<li>Leap motion device</li>
+			 	<li>Headset</li>
+			 </ul>
+			 However, as I saw in the schematics released by the company, the leap motion device is mounted in the head. Here is the picture of a sample design where you can see a leap motion device embedded onto the top of the head of the user.
 		</p> 
 		<div style="text-align: center;">
-			<img src="" style="width:350px;height:200px;" alt="before"class="check">	
-			<p style="text-align: center;">This is how Raptor glasses look!!<a href="https://everysight.com/wp-content/themes/evrysgt/static/img/raptor-real-green.png">Source</a>	</p>
+			<img src="http://blog.leapmotion.com/wp-content/uploads/2018/04/5_mechanical-rig2.jpg" style="width:450px;height:300px;" alt="before"class="check">	
+			<p style="text-align: center;"><a href="http://blog.leapmotion.com/wp-content/uploads/2018/04/5_mechanical-rig2.jpg">Source</a>	</p>
 		</div>
-		<h3>Features </h3>
 		<p class="nestedP">
-			
+			This is a very simple  framework with core of the detection and mapping done by their proprietary device and then using basic computer and hardware to show the immersive content. First thing to notice about the headset is  "two ultra-bright, low-persistence" displays with 1,600 x 1,440 resolution, each running at 120 frames per second. Secondly, the displays' field of view is "over 100 degrees". This is already markedly better visual specs than what high-end VR headsets like the Oculus Rift and HTC Vive offer. Secondly, I would like to talk about its design. According to design specification features provided by the company, the headset is designed to balance the weight around the head and to minimise the load on the nose of the user. Also, the headset is not at all good looking. However, since it is more like a proof of concept and not the finished consumer useable product, I am holding my judgement about it for now. <br>
+			Second component is the leap motion device which I believe is the core of the whole setup. The leap motion device runs at 150 fps has field of view of 180 x 180 degrees and can track hands really well. Owing to this tracking capability, there is very low latency in the projection of the content and user can expect a high-end performance.<br>
+			One more thing that I wanted to discuss was the design thinking that they wanted to incorporate while developing the product. This product was created keeping in mind about the way the user will/should intend to use the product and then everything was developed. Hence, the applications that were created looked intuitive and easy to use. This is evident from the demos available in the internet. Following is my most favourite one: 			
 		</p>
-		<h3>Critique </h3>
+		<div style="text-align: center;">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/6dB1IRg3Qls" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<h3>How is it different </h3>
 		<p class="nestedP">
-			
+			This product is different from everything else in the world in following two ways:<br>
+			<b>World Mapping: </b> In traditional devices like HoloLens the surrounding of the user is mapped. The different points of interest are detected and then the augmented reality content is projected. However, in this case the device only tracks the hands of the user and then uses that information to create the content. Because of this, the device is able to manage occlusion pretty efficiently. Please see the GIF below where the user can see some form of enhanced gadget interface to the hand and you can see how the gadget is sticking very close to the hand. Even after the hands movement of hands in different directions the gadget is still holding its position relative to hand pretty well.
 		</p>
-
+		<div  style="text-align: center;">
+			<video style="width: 560px; height: 315px" src="http://blog.leapmotion.com/wp-content/uploads/2018/04/wearable.mp4" autoplay loop muted></video>
+		</div>
+		<p class="nestedP">
+			<b>Open sourcing: </b> The technology created by the Leap Motion was never meant for them to use it for creating their own product. Rather they wanted to make augmented reality available for everyone. According to the company, the headset for augmented reality can be created under 100 USD at mass scale. If that is possible, the market can actually be flooded with cheap augmented reality products which can further push the innovations in this field. Also, different applications can be created by the independent developers and there can be a dedicated store just like Play Store or App Store for the users to download.
+		</p>
 		<h3>Conclusion</h3>
 		<p class="nestedP">
-			
+			I really like this technology mainly because I have seen it in action and its performance. From business point of view open sourcing a technology with your product as the powering module is a really smart way to sell your product. Things that lacks in the product is the haptic feedback for touching something and the range of distance for its working. But overall, this is beautiul piece of technology along with the possibility of its applications. Once again, the company has created the same kind of excitement amongst the tech enthusiasts just like the time when they started out in the form of kick starter campaign. I am hoping to get my hands on this device one day and create applications out of it.
 		</p>
 		<h3>References</h3>
 		<ul>
-			
+			<li>http://blog.leapmotion.com/northstar/</li>
+			<li>http://blog.leapmotion.com/our-journey-to-the-north-star/</li>
+			<li>http://blog.leapmotion.com/north-star-open-source/</li>
+			<li>https://www.youtube.com/watch?v=Jz98nWcr_hc</li>
+			<li>https://www.tomshardware.com/news/project-north-star-open-source-documents,37222.html</li>
+			<li>https://mashable.com/2018/04/09/leap-motion-project-north-star-ar-headset/#_DRWn_U8Ciqw</li>
 		</ul>
 	</body>
 </html>
