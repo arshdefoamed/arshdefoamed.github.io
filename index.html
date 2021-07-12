@@ -1,30 +1,35 @@
-<html>
-	<script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
 		setTimeout(function () { 
 		 var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
 			// Windows Phone must come first because its UA also contains "Android"
-			if (/windows phone/i.test(userAgent)) {		
-				alert("This is windows device");			
+			if (/windows phone/i.test(userAgent)) {						
 				console.log("windows device detected");
 			}
 
-			if (/android/i.test(userAgent)) {				
+			if (/android/i.test(userAgent)) {	
+				console.log("android device detected")
 				window.location.replace("https://play.google.com/store/apps/details?id=com.utopiansoft.starlight");
 				return;
 			}
 
 			// iOS detection from: http://stackoverflow.com/a/9039885/177710
 			if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-				alert("this is ios")
-				window.location = "https://apps.apple.com/us/app/bookingo/id1572761041";
+				console.log("this is ios")
+		window.location.replace("https://apps.apple.com/us/app/bookingo/id1572761041");
 				return;
 			}
 
 
-			alert("could not detect device type");
+			console.log("could not detect device type");
 			window.location.replace("https://www.utopiansoftwares.com/products/bookingo");
 		}, 2000);
 		window.location.replace("ethosapp://");
 	</script>
+</body>
 </html>
