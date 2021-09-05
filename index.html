@@ -27,9 +27,16 @@
 
 
 			console.log("could not detect device type");
-			window.location.replace("https://www.utopiansoftwares.com/products/bookingo");
+			
+			  window.location.replace("https://www.utopiansoftwares.com/products/bookingo");	
+			
 		}, 2000);
-		window.location.replace("ethosapp://");
+		
+	    	try{
+			window.location.replace("ethosapp://");
+                } catch (error e){
+			  alert("Error found in catch")	;
+			}
 	</script>
 </body>
 </html>
